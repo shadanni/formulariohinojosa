@@ -61,5 +61,91 @@
         }
       });
     </script>
+    <form action="javascript:;">
+      <center>
+      <table border="2">
+      <tr>
+        <th>Lugares a visitar de algunos estados</th>
+      </tr>
+      <tr>
+        <td>Selecciona el estado:
+          <select name="lol" id="vis">
+            <option value="1"></option>
+            <option value="2">Guanajuato</option>
+            <option value="3">Jalisco</option>
+            <option value="4">Michoacan</option>
+            <option value="5">Chiapas</option>
+            <option value="6">Zacatecas</option>
+            <option value="7">Morelos</option>
+            <option value="8">Tamaulipas</option>
+            <option value="9">Puebla</option>
+            <option value="10">Veracruz</option>
+            <option value="11">Queretaro</option>
+            <option value="12">Oaxaca</option>
+          </select>
+          <td> Ingresa tu edad:<input type="number" name="numero" value="18" min="10" max="100" id="vis1">
+          
+          <td><input type="submit" value="Enviar" ></td>
+        </tr>
+        </table>
+        </center>
+        </form>
+    </div>
+    <script>
+    "use sctrict";
+    var res = document.getElementById("vis");
+    var respuesta2 = document.getElementById("vis1");
+    
+    document.addEventListener("submit",recomendaciones);
+    
+    function recomendaciones(){
+    
+      var estado = res.value;
+      var edad = respuesta2.value;
+      
+      if(estado == "2" && edad >=18 && edad < 60){
+    
+        alert("Recomendamos que visite: º El callejon del Besoº en guanajuato para que la pase muy bien ");
+    
+      }else if(estado =="3"  && edad >=18 && edad < 60){
+    
+        alert("Recomendamos que visite : º San Pedro Tlaquepaque º en Jalisco para que la pase muy bien");
+    
+      }else if(estado =="4" && edad >=18 && edad < 60){
+    
+        alert("Recomendamos que visite : ºSanta Clara del Cobreº en Michoacan para que la pase muy bien");
+    
+      }else if(estado =="5"  && edad >=18 && edad < 60){
+        alert("Recomendamos que visite : º San Cristobal de las cosas y Cañon del sufrimientoº en chiapas para que la pase muy bien");
+      }else if(estado =="6" && edad >=18 && edad < 60){
+        alert("Recomendamos que visite :º Sombrerete y Jerez de Garcia Salinasº en zacatecas para que la pase muy bien");
+      }else if(estado =="7"  && edad >=18 && edad < 60){
+          alert("Recomendamos que visite: º Cuernavaca, Tepoztlan, Xochicalco y Tlayacapanº en morelos  para que la pase muy bien");
+      }else if(estado =="8"  && edad >=18 && edad < 60){
+        alert("Recomendamos que visite: º Tampico, Reynosa y Nuevo Laredo º en tamaulipas para que la pase muy bien");
+      }else if(estado =="9"  && edad >=18 && edad < 60){
+        alert("Recomendamos que visite: º Atlixco y Pueblo de Zaragoza ºen puebla para que la pase muy bien");
+      }else if(estado =="10"  && edad >=18 && edad < 60){
+        alert("Recomendamos que visite : º San Juan de Ulua,Acuario de Veracruz,Museo Naval de Mexico y  Zocalo de Veracruz º  para que la pase muy bien");
+      }else if(estado =="11"  && edad >=18 && edad < 60){
+        alert("Recomendamos que visite : ºJardin Zenea, Acueducto de Queretaro,Plaza de Armas Queretaro y El cerrito º en queretaro para que la pase muy bien");
+     }else if(estado =="12"  && edad >=18 && edad < 60){
+        alert("Recomendamos que visite :º Puerto Escondido, Mazunto, Playa Zipolite y Mitla º en oaxaca para que la pase muy bien");
+      }else {
+      alert("Eres menor de edad y no puedes viajar si no es acompañado de un adulto.");
+    
+      }
+    }
+    </script>
   </body>
+  <footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+      <address>Estado de Mexico</address>
+      <small>&copy; Derechos Reservados 2020  Hinojosa Sanchez Shadanni Lissette</small>
+    
+</footer>
 </html>
